@@ -11,7 +11,7 @@
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="nav"><a class="wordmark" href="#" aria-label="SLIP-VLA home">SLIP<span>–</span>VLA</a><nav aria-label="Main navigation"><a href="#demos">Demos</a><a href="#method">Method</a><a href="#results">Results</a><a href="#citation">Cite</a></nav><a class="nav-paper" href="assets/SLIP-VLA.pdf" target="_blank" rel="noopener">Read paper <span aria-hidden="true">↗</span></a></header>
+<header class="nav"><a class="wordmark" href="#" aria-label="SLIP-VLA home">SLIP<span>–</span>VLA</a><nav aria-label="Main navigation"><a href="#demos">Demos</a><a href="#method">Method</a><a href="#results">Results</a><a href="#citation">Cite</a></nav><a class="nav-paper" href="https://arxiv.org/pdf/2609.33575" target="_blank" rel="noopener">Read paper <span aria-hidden="true">↗</span></a></header>
 <main id="main">
 <section class="hero" aria-labelledby="title">
 <div class="hero-glow" aria-hidden="true"></div>
@@ -21,7 +21,7 @@
 <div class="authors"><span>Tianfu Li<sup>1,*</sup></span><span>Haoxuan Xu<sup>2,*</sup></span><span>Wenbo Chen<sup>1,*</sup></span><span>Haitian Li<sup>3</sup></span><span>Changchuan Yang<sup>4</sup></span><span>Xinhu Zheng<sup>1</sup></span><span>Jun Ma<sup>1</sup></span><span>Yuan Liu<sup>2</sup></span><span>Lujia Wang<sup>1</sup></span><span>Haoang Li<sup>1</sup></span></div>
 <div class="affiliations"><span><sup>1</sup> The Hong Kong University of Science and Technology (Guangzhou)</span><span><sup>2</sup> The Hong Kong University of Science and Technology</span><span><sup>3</sup> Nanyang Technological University</span><span><sup>4</sup> Zhejiang University</span></div>
 <p class="equal">* Equal contribution</p>
-<div class="hero-actions"><a class="button primary" href="assets/SLIP-VLA.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6zM14 3v5h4M9 12h6M9 16h6"/></svg> Paper</a><a class="button secondary" href="https://github.com/HaoxuanXU1024/SLIP_VLA" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-14-2 18"/></svg> GitHub</a><a class="button secondary" href="#demos"><span aria-hidden="true">▶</span> Explore demos</a></div>
+<div class="hero-actions"><a class="button primary" href="https://arxiv.org/pdf/2609.33575" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6zM14 3v5h4M9 12h6M9 16h6"/></svg> Paper</a><a class="button secondary" href="https://github.com/HaoxuanXU1024/SLIP_VLA" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-14-2 18"/></svg> GitHub</a><a class="button secondary" href="#demos"><span aria-hidden="true">▶</span> Explore demos</a></div>
 <div class="hero-reel" id="hero-reel"></div>
 <div class="reel-caption"><span>One forward pass. A future ready for action.</span><button id="motion-toggle" class="text-button" aria-pressed="false">Pause autoplay <span aria-hidden="true">Ⅱ</span></button></div>
 </section>
@@ -44,15 +44,14 @@
 <article class="result-card"><p class="eyebrow">ABLATION / LATENT SHAPING</p><h3>Both objectives matter.</h3><p class="muted">Perceptual and control shaping work best together.</p><div class="table-scroll"><table><caption class="sr-only">Ablation results from Table IV, success rates in percent</caption><thead><tr><th>Variant</th><th>LIBERO</th><th>LIBERO-Plus</th></tr></thead><tbody><tr><td>Naive single-step</td><td>97.7</td><td>79.0</td></tr><tr><td>+ Perceptual</td><td>98.3</td><td>81.4</td></tr><tr><td>+ Control</td><td>98.5</td><td>82.3</td></tr><tr class="highlight"><td>+ Both (SLIP-VLA)</td><td>98.9</td><td>83.2</td></tr></tbody></table></div><p class="source-note">Table IV. Same single-step setting across variants.</p></article></div>
 <div class="analysis-grid"><figure class="paper-figure"><img src="assets/images/analysis.png" alt="Qualitative evidence that shaped single-step latents preserve future geometry, task-relevant semantics and action-dependent dynamics." loading="lazy" width="732" height="774"><figcaption><strong>What the latent learns.</strong> More coherent future geometry, concentrated semantic responses, and sensitivity to action changes (Figure 3).</figcaption></figure><figure class="paper-figure"><img src="assets/images/denoising.png" alt="Denoising step study: one step achieves 83.2% LIBERO-Plus success; two, three and four steps achieve 83.1%, 82.9%, and 82.9%." loading="lazy" width="726" height="585"><figcaption><strong>One step is enough.</strong> Additional denoising does not improve policy success in the reported experiment (Figure 4).</figcaption></figure></div>
 </section>
-<section class="citation-section" id="citation"><div class="section"><div class="section-head"><div><p class="eyebrow">04 / CITATION</p><h2>Build on SLIP-VLA.</h2></div><p>Manuscript citation.<br>The arXiv identifier will be added<br>when the preprint is available.</p></div><div class="citation-box"><button class="button secondary copy-button" id="copy-citation">Copy BibTeX</button><pre id="bibtex">@misc{li2026slipvla,
-  title  = {SLIP-VLA: Single-Step Latent Imagination for Policy
-            Learning in Vision-Language-Action Models},
-  author = {Li, Tianfu and Xu, Haoxuan and Chen, Wenbo and Li, Haitian
-            and Yang, Changchuan and Zheng, Xinhu and Ma, Jun
-            and Liu, Yuan and Wang, Lujia and Li, Haoang},
-  year   = {2026},
-  note   = {Manuscript},
-  url    = {https://haoxuanxu1024.github.io/SLIP_VLA/}
+<section class="citation-section" id="citation"><div class="section"><div class="section-head"><div><p class="eyebrow">04 / CITATION</p><h2>Build on SLIP-VLA.</h2></div><p>Published on arXiv.<br>Use the citation below<br>when referring to our work.</p></div><div class="citation-box"><button class="button secondary copy-button" id="copy-citation">Copy BibTeX</button><pre id="bibtex">@misc{li2026slipvlasinglesteplatentimagination,
+  title = {{SLIP-VLA}: Single-Step Latent Imagination for Policy Learning in Vision-Language-Action Models},
+  author = {Tianfu Li and Haoxuan Xu and Wenbo Chen and Haitian Li and Changchuan Yang and Xinhu Zheng and Jun Ma and Yuan Liu and Lujia Wang and Haoang Li},
+  year = {2026},
+  eprint = {2609.33575},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.RO},
+  url = {https://arxiv.org/abs/2609.33575},
 }</pre><p id="copy-status" aria-live="polite"></p></div></div></section>
 </main>
 <footer><a class="wordmark" href="#" aria-label="SLIP-VLA home">SLIP<span>–</span>VLA</a><p>Single-Step Latent Imagination for Robot Learning</p><a href="https://github.com/HaoxuanXU1024/SLIP_VLA" target="_blank" rel="noopener">Project repository ↗</a></footer>
